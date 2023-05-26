@@ -1,0 +1,60 @@
+.countTime-container {
+    margin-top     : 200px;
+
+    .activity {
+        display        : flex;
+        justify-content: center;
+        gap            : 50px;
+        margin-bottom: 50px;
+
+        .btn {
+            width        : 80px;
+            height       : 40px;
+            padding      : 6px 15px;
+            font-size    : 30px;
+            border-radius: 5px;
+            cursor       : pointer;
+            color        : #fff;
+        }
+
+        .start {
+            background-color: rgb(214, 144, 39);
+
+            &:active {
+                transform: scale(0.97);
+                background-color: rgb(217, 159, 72);
+            }
+        }
+
+        .pause {
+            background-color: rgb(62, 153, 62);
+
+            &:active {
+                transform: scale(0.97);
+                background-color: rgb(71, 197, 71);
+            }
+        }
+
+        .reset {
+            background-color: rgb(210, 85, 85);
+
+            &:active {
+                transform: scale(0.97);
+                background-color: rgb(169, 91, 91);
+            }
+        }
+    }
+
+    .clock {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        border-radius: 10px;
+        max-width: 500px;
+        background-color: rgb(205, 107, 114);
+        color: #fff;
+        font-size: 100px;
+        font-weight: 600;
+    }
+
+}
