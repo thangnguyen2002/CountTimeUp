@@ -1,15 +1,18 @@
 import "./CountTime.scss"
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const CountTime = () => {
     const [timer, setTimer] = useState(0)
     const countRef = useRef(null)
 
+    useEffect(()=> {
+        handleStart()
+    }, [])
+
     const handleStart = () => {
         countRef.current = setInterval(() => {
             setTimer((timer) => timer + 1)
         }, 1000)
-        
     }
 
     const handlePause = () => {
